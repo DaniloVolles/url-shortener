@@ -17,9 +17,13 @@ public class Link {
     private Long id;
     
     @NotBlank
-    private String url;
+    private String longUrl;
 
-    public Link(String url) {
-        this.url = url;
+    @NotBlank
+    private String shortUrl;
+
+    public Link(String longUrl, String shortUrl) {
+        this.longUrl = longUrl;
+        this.shortUrl = shortUrl;
     }
 }

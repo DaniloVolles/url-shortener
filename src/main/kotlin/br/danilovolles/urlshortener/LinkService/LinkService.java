@@ -10,5 +10,6 @@ import br.danilovolles.urlshortener.dto.ResponseDTO;
 public interface LinkService {
 
     ResponseEntity<ResponseDTO<?>> saveNewLink(LinkInputDTO newLink) throws Exception;
+    ResponseEntity<ResponseDTO<?>> getLinkByLongLink(String existingLongLink) throws Exception;
     
 }
